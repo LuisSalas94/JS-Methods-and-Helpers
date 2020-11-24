@@ -37,8 +37,47 @@ let finalResult = products.map((product) => {
 
 console.log(finalResult); */
 
-const srt = ["1", "2", "3", "4"];
+/* const srt = ["1", "2", "3", "4"];
 
 const numbers = srt.map(Number);
 
-console.log(numbers);
+console.log(numbers); */
+
+// MAP Method
+const people = [
+	{
+		name: "bob",
+		age: 20,
+		position: "developer",
+	},
+	{
+		name: "anna",
+		age: 25,
+		position: "designer",
+	},
+	{
+		name: "susy",
+		age: 30,
+		position: "the boss",
+	},
+	{
+		name: "john",
+		age: 26,
+		position: "intern",
+	},
+];
+
+const ages = people.map((person) => {
+	return person.age;
+});
+console.log(ages);
+
+const newPeople = people.map((person) => {
+	return {
+		name: person.name,
+		age: person.age,
+		position: person.position,
+	};
+});
+
+console.log(newPeople);
